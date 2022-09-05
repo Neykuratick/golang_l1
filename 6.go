@@ -24,6 +24,8 @@ func chanStop(done chan bool, wg *sync.WaitGroup) {
 
 func panicStop(wg *sync.WaitGroup) {
 	//panic("Panic stop")
+	// Закомментировал, чтобы паников не было в рантайме
+
 	fmt.Println("Panic stop")
 	wg.Done()
 }

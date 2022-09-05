@@ -12,7 +12,7 @@ func main() {
 
 	fmt.Println(varType)
 
-	// type assertion
+	// type assertion. Можно сделать ещё проверку по типу и запаниковать, если он не подходит
 	variableInt, isInt := variable.(int)
 	fmt.Println(variableInt, isInt)
 }

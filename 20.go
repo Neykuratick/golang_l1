@@ -11,6 +11,9 @@ func reverseSentence(input string) string {
 	stringsSliceLen := len(stringsSlice)
 
 	for i, j := 0, stringsSliceLen-1; i < j; i, j = i+1, j-1 {
+		// выглядит страшно, но i инкриментируется с нуля до конца слайса
+		// а j до нуля из конца слайса
+
 		stringsSlice[i], stringsSlice[j] = stringsSlice[j], stringsSlice[i]
 	}
 

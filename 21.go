@@ -2,7 +2,8 @@ package main
 
 import "fmt"
 
-// Native infrastructure
+// Native infrastructure. У нас есть линуксер, который только умееет пользоваться терминалами
+// На его дистрибутиве установлен только один терминал - st
 
 type LinuxUser struct{}
 
@@ -21,7 +22,7 @@ func (s SucklessTerminal) ls() string {
 	return "directory content"
 }
 
-// Foreign tool
+// Foreign tool. А ещё у нас есть винда, которую компания закупила, но не обучила линуксеров ею пользоваться
 
 type WindowsExplorer struct{}
 
@@ -29,7 +30,7 @@ func (w WindowsExplorer) openFolder() string {
 	return "directory content"
 }
 
-// Adapter
+// Adapter. Я написал адаптер, который гуи просмотрщик конвертирует в понятный терминал
 
 type WindowsToLinuxAdapter struct {
 	explorer WindowsExplorer

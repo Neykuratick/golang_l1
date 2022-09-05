@@ -11,7 +11,7 @@ type Point struct {
 }
 
 func calculateDistance(point1 Point, point2 Point) float64 {
-	result := math.Pow(point1.x-point2.x, 2) + math.Pow(point1.y-point2.y, 2)
+	result := math.Pow(point1.x-point2.x, 2) + math.Pow(point1.y-point2.y, 2) // Нашёл формулу в учебники алгебры
 	return math.Sqrt(result)
 }
 

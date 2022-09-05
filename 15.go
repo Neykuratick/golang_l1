@@ -5,6 +5,8 @@ import "fmt"
 var justString string
 
 func createHugeString(count int) string {
+	// Просто вспомогательная функция, чтобы самому вручную не писать кучу раз J
+
 	text := ""
 	for i := 0; i < count; i++ {
 		text += "j"

@@ -7,6 +7,8 @@ import (
 )
 
 func merge(slice1 []int, pivot int, slice2 []int) []int {
+	// вспомогательная функция, которая из двух слайсов делает 1
+
 	var masterSlice []int
 
 	for _, num := range slice1 {
@@ -23,6 +25,8 @@ func merge(slice1 []int, pivot int, slice2 []int) []int {
 }
 
 func quicksort(numbers []int) []int {
+	// медленная быстрая сортировка, до которой я догадался сам, но которая работает медленно
+
 	if len(numbers) < 1 {
 		return numbers
 	}

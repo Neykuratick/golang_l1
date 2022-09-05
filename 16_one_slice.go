@@ -24,6 +24,9 @@ func partition(numbers []int, start int, end int) int {
 }
 
 func Quicksort16(numbers []int, start int, end int) []int {
+	// быстрая сортировка, алгоритм которой я посмотрел на ютубе
+	// она быстрее, потому что работает с одним только слайсом
+
 	if start > end {
 		return numbers
 	}
@@ -44,5 +47,5 @@ func main() {
 	now := time.Now()
 	numbers = Quicksort16(numbers, 0, len(numbers)-1)
 	fmt.Println(numbers)
-	fmt.Println(time.Now().Sub(now).Milliseconds())
+	fmt.Println(time.Now().Sub(now).Milliseconds()) // тут ещё замеры есть
 }

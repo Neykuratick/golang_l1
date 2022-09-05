@@ -3,6 +3,7 @@ package main
 import "fmt"
 
 func binarySearch(numbers []int, number int) bool {
+	// стринги можно так же искать, если их в руны конвентировать
 
 	if len(numbers) < 2 {
 		return numbers[0] == number
@@ -29,7 +30,7 @@ func main() {
 	fmt.Println(binarySearch(numbers, 0))
 }
 
-// зависимость из предыдущего задания
+// Дальще идёт зависимость из предыдущего задания
 
 func partition17(numbers []int, start int, end int) int {
 	pivot := numbers[end]

@@ -16,6 +16,7 @@ func reverseString(input string) string {
 
 func main() {
 	fmt.Println(reverseString("главрыба"))
+	// приколы с палиндромами
 	fmt.Println(reverseString("шалаш"))
 	fmt.Println(reverseString("кабак"))
 	fmt.Println(reverseString("заказ"))
