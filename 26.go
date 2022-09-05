@@ -2,21 +2,9 @@ package main
 
 import "fmt"
 
-func convertToRunes(str string) []rune {
-	// Вспомогательная функция, которая просто стринг превращает в слайс рун
-
-	var runes []rune
-
-	for _, char := range str {
-		runes = append(runes, char)
-	}
-
-	return runes
-}
-
 func isUnique(str string) bool {
 	var list []rune
-	runes := convertToRunes(str)
+	runes := []rune(str)
 	keys := make(map[rune]bool)
 
 	for _, entry := range runes {
